@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Tests</title>
+<link rel="stylesheet" href="blank.css">
+<link rel="stylesheet" href="footer.css">
+<style>
+ 
+   .heading h2{
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+
+    #subtest{
+    display: flex;
+    justify-content: space-between;
+    }
+
+
+  #subtest div {
+     width: 30%;
+     border: 1px solid rgba(74, 73, 73, 0.454);
+     padding: 10px;
+     border-radius: 20px;
+     padding-left: 20px;
+     
+   }
+
+
+
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-5 col-12">
+          <!-- Contact -->
+          <ul class="top-link">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <!-- End Contact -->
+        </div>
+        <div class="col-lg-6 col-md-7 col-12">
+          <!-- Top Contact -->
+          <ul class="top-contact">
+            <li><i class="fa fa-phone"></i>+880 1234 56789</li>
+            <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+          </ul>
+          <!-- End Top Contact -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <a class="navbar-brand" href="index.html" >
+      <img src="images/reshot-icon-rss-HQM63JB2CS.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+      <span>PULSE CRAFT</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/doctors.html">Doctors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/medicines.html">Medicines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/records.html">Health Records</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lab.html">Lab Tests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <hr style="margin: 0;">
+
+
+
+
+  <div class="heading">
+    <h2 style="font-weight: 300; margin: 50px 0px 50px 0px;">Tests Available For You</h2>
+  </div>
+  
+  
+<div class="container mt-4" id="subtest">
+  <!-- Subtest Box 1 -->
+  <div class="subtest-box">
+    <h4>Blood Test</h4>
+    <p>Price: $50.00</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Add
+    </button>
+  </div>
+
+  <!-- Subtest Box 2 -->
+  <div class="subtest-box">
+    <h4>Urine Test</h4>
+    <p>Price: $30.00</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+     Add
+    </button>
+  </div>
+
+  <!-- Subtest Box 3 -->
+  <div class="subtest-box">
+    <h4>Cholesterol Test</h4>
+    <p>Price: $40.00</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Add
+    </button>
+  </div>
+
+  <!-- Add more subtest boxes as needed -->
+
+</div>
+
+
+<div class="container">
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Select a Hospital</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Hospital Boxes -->
+          <div class="container">
+            <!-- Hospital Box 1 -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Hospital Name: <span id="hospitalName1"></span></h5>
+                <p>Address: <span id="address1"></span></p>
+                <p>City: <span id="city1"></span></p>
+                <p>Ratings: <span id="ratings1"></span></p>
+                <p>Fees: <span id="fees1"></span></p>
+                <button class="btn btn-primary">Select</button>
+              </div>
+            </div>
+
+            <!-- Hospital Box 2 -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Hospital Name: <span id="hospitalName2"></span></h5>
+                <p>Address: <span id="address2"></span></p>
+                <p>City: <span id="city2"></span></p>
+                <p>Ratings: <span id="ratings2"></span></p>
+                <p>Fees: <span id="fees2"></span></p>
+                <button class="btn btn-primary">Select</button>
+              </div>
+            </div>
+
+            <!-- Hospital Box 3 -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Hospital Name: <span id="hospitalName3"></span></h5>
+                <p>Address: <span id="address3"></span></p>
+                <p>City: <span id="city3"></span></p>
+                <p>Ratings: <span id="ratings3"></span></p>
+                <p>Fees: <span id="fees3"></span></p>
+                <button class="btn btn-primary">Select</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // Function to generate random hospital details
+  function generateRandomDetails() {
+    // Sample data for demonstration
+    const names = ["City Hospital", "Sunrise Medical Center", "Greenfield Clinic"];
+    const addresses = ["123 Main St", "456 Oak Ave", "789 Pine Blvd"];
+    const cities = ["New York", "Los Angeles", "Chicago"];
+    const ratings = ["4.5", "3.8", "4.2"];
+    const fees = ["$150", "$120", "$180"];
+
+    // Random index to select data
+    const randomIndex = Math.floor(Math.random() * names.length);
+
+    return {
+      name: names[randomIndex],
+      address: addresses[randomIndex],
+      city: cities[randomIndex],
+      rating: ratings[randomIndex],
+      fee: fees[randomIndex],
+    };
+  }
+
+  // Update modal content with random details on modal show
+  $('#myModal').on('show.bs.modal', function (event) {
+    // Update Hospital Box 1
+    const details1 = generateRandomDetails();
+    $('#hospitalName1').text(details1.name);
+    $('#address1').text(details1.address);
+    $('#city1').text(details1.city);
+    $('#ratings1').text(details1.rating);
+    $('#fees1').text(details1.fee);
+
+    // Update Hospital Box 2
+    const details2 = generateRandomDetails();
+    $('#hospitalName2').text(details2.name);
+    $('#address2').text(details2.address);
+    $('#city2').text(details2.city);
+    $('#ratings2').text(details2.rating);
+    $('#fees2').text(details2.fee);
+
+    // Update Hospital Box 3
+    const details3 = generateRandomDetails();
+    $('#hospitalName3').text(details3.name);
+    $('#address3').text(details3.address);
+    $('#city3').text(details3.city);
+    $('#ratings3').text(details3.rating);
+    $('#fees3').text(details3.fee);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
